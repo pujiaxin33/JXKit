@@ -13,6 +13,7 @@
 		198B31332195634500FB7433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198B31322195634500FB7433 /* Assets.xcassets */; };
 		198B31362195634500FB7433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198B31342195634500FB7433 /* LaunchScreen.storyboard */; };
 		19BA2FC921A3A78E00170A41 /* JXDirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */; };
+		19BA2FCC21A3E06500170A41 /* Timer+JXCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2FCB21A3E06500170A41 /* Timer+JXCallback.swift */; };
 		5503A70B8F8C863FE9FA1EF5 /* Pods_JXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45CD38280DFB21F6CE5922 /* Pods_JXKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		198B31352195634500FB7433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198B31372195634500FB7433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDirectionButton.swift; sourceTree = "<group>"; };
+		19BA2FCB21A3E06500170A41 /* Timer+JXCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+JXCallback.swift"; sourceTree = "<group>"; };
 		8F45CD38280DFB21F6CE5922 /* Pods_JXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D906E8AC7D49B62DFC4A82E0 /* Pods-JXKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXKit/Pods-JXKit.release.xcconfig"; sourceTree = "<group>"; };
 		EE4D505BC7479EA3CC9B4B66 /* Pods-JXKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXKit/Pods-JXKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		198B312A2195634500FB7433 /* JXKit */ = {
 			isa = PBXGroup;
 			children = (
+				19BA2FCA21A3E05400170A41 /* Timer */,
 				19BA2FC721A3A78D00170A41 /* JXDirectionButton */,
 				198B312B2195634500FB7433 /* AppDelegate.swift */,
 				198B312D2195634500FB7433 /* ViewController.swift */,
@@ -80,6 +83,14 @@
 				19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */,
 			);
 			path = JXDirectionButton;
+			sourceTree = "<group>";
+		};
+		19BA2FCA21A3E05400170A41 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				19BA2FCB21A3E06500170A41 /* Timer+JXCallback.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		3E453106FB2AB13E1536C491 /* Pods */ = {
@@ -234,6 +245,7 @@
 				198B312E2195634500FB7433 /* ViewController.swift in Sources */,
 				19BA2FC921A3A78E00170A41 /* JXDirectionButton.swift in Sources */,
 				198B312C2195634500FB7433 /* AppDelegate.swift in Sources */,
+				19BA2FCC21A3E06500170A41 /* Timer+JXCallback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
