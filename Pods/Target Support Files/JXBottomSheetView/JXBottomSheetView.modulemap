@@ -1,0 +1,6 @@
+framework module JXBottomSheetView {
+  umbrella header "JXBottomSheetView-umbrella.h"
+
+  export *
+  module * { export * }
+}

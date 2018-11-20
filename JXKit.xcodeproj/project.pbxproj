@@ -13,6 +13,7 @@
 		198B31332195634500FB7433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198B31322195634500FB7433 /* Assets.xcassets */; };
 		198B31362195634500FB7433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198B31342195634500FB7433 /* LaunchScreen.storyboard */; };
 		19BA2FC921A3A78E00170A41 /* JXDirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */; };
+		5503A70B8F8C863FE9FA1EF5 /* Pods_JXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45CD38280DFB21F6CE5922 /* Pods_JXKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		198B31352195634500FB7433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198B31372195634500FB7433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDirectionButton.swift; sourceTree = "<group>"; };
+		8F45CD38280DFB21F6CE5922 /* Pods_JXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D906E8AC7D49B62DFC4A82E0 /* Pods-JXKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXKit/Pods-JXKit.release.xcconfig"; sourceTree = "<group>"; };
+		EE4D505BC7479EA3CC9B4B66 /* Pods-JXKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXKit/Pods-JXKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5503A70B8F8C863FE9FA1EF5 /* Pods_JXKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				198B312A2195634500FB7433 /* JXKit */,
 				198B31292195634500FB7433 /* Products */,
+				3E453106FB2AB13E1536C491 /* Pods */,
+				AC5F8E9C74C5019271BC3A94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			path = JXDirectionButton;
 			sourceTree = "<group>";
 		};
+		3E453106FB2AB13E1536C491 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE4D505BC7479EA3CC9B4B66 /* Pods-JXKit.debug.xcconfig */,
+				D906E8AC7D49B62DFC4A82E0 /* Pods-JXKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC5F8E9C74C5019271BC3A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F45CD38280DFB21F6CE5922 /* Pods_JXKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198B313A2195634500FB7433 /* Build configuration list for PBXNativeTarget "JXKit" */;
 			buildPhases = (
+				BEB3AD8FC7E34196613B5900 /* [CP] Check Pods Manifest.lock */,
 				198B31242195634500FB7433 /* Sources */,
 				198B31252195634500FB7433 /* Frameworks */,
 				198B31262195634500FB7433 /* Resources */,
+				F32BAA960292DA64A442F9E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEB3AD8FC7E34196613B5900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32BAA960292DA64A442F9E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JXKit/Pods-JXKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JXBottomSheetView/JXBottomSheetView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXGradientKit/JXGradientKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JXMarqueeView/JXMarqueeView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXMovableCellTableView/JXMovableCellTableView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPagingView/JXPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPopupView/JXPopupView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBottomSheetView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXGradientKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXMarqueeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXMovableCellTableView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPopupView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXKit/Pods-JXKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		198B31242195634500FB7433 /* Sources */ = {
@@ -292,6 +377,7 @@
 		};
 		198B313B2195634500FB7433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4D505BC7479EA3CC9B4B66 /* Pods-JXKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +395,7 @@
 		};
 		198B313C2195634500FB7433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D906E8AC7D49B62DFC4A82E0 /* Pods-JXKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JXBottomSheetView" "${PODS_CONFIGURATION_BUILD_DIR}/JXCategoryView" "${PODS_CONFIGURATION_BUILD_DIR}/JXGradientKit" "${PODS_CONFIGURATION_BUILD_DIR}/JXMarqueeView" "${PODS_CONFIGURATION_BUILD_DIR}/JXMovableCellTableView" "${PODS_CONFIGURATION_BUILD_DIR}/JXPagingView" "${PODS_CONFIGURATION_BUILD_DIR}/JXPopupView"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXBottomSheetView/JXBottomSheetView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXCategoryView/JXCategoryView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXGradientKit/JXGradientKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXMarqueeView/JXMarqueeView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXMovableCellTableView/JXMovableCellTableView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXPagingView/JXPagingView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JXPopupView/JXPopupView.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "JXBottomSheetView" -framework "JXCategoryView" -framework "JXGradientKit" -framework "JXMarqueeView" -framework "JXMovableCellTableView" -framework "JXPagingView" -framework "JXPopupView"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

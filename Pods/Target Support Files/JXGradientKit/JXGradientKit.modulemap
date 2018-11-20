@@ -1,0 +1,6 @@
+framework module JXGradientKit {
+  umbrella header "JXGradientKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

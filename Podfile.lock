@@ -1,0 +1,40 @@
+PODS:
+  - JXBottomSheetView (0.0.3)
+  - JXCategoryView (1.1.2)
+  - JXGradientKit (0.0.3)
+  - JXMarqueeView (0.0.5)
+  - JXMovableCellTableView (0.0.2)
+  - JXPagingView/Paging (0.1.7)
+  - JXPopupView (0.0.3)
+
+DEPENDENCIES:
+  - JXBottomSheetView (= 0.0.3)
+  - JXCategoryView (= 1.1.2)
+  - JXGradientKit (= 0.0.3)
+  - JXMarqueeView (= 0.0.5)
+  - JXMovableCellTableView (= 0.0.2)
+  - JXPagingView/Paging (= 0.1.7)
+  - JXPopupView (= 0.0.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JXBottomSheetView
+    - JXCategoryView
+    - JXGradientKit
+    - JXMarqueeView
+    - JXMovableCellTableView
+    - JXPagingView
+    - JXPopupView
+
+SPEC CHECKSUMS:
+  JXBottomSheetView: ac9ea9d95a342ce27853231bbb503e676885b5e0
+  JXCategoryView: 7281368e4f4e10f1d006ff07114cafd63a495602
+  JXGradientKit: 2e07ccf170de3e144bbfc48ea27add818d02a42c
+  JXMarqueeView: b9d319c60dda14d7f6936b5b2593eaf30c931efb
+  JXMovableCellTableView: 8987dbe0594f7e952dbcefa9754fffb0605fff3a
+  JXPagingView: 9bc3e0e8c5b2655f1c3ecb66e1c053ce1094da27
+  JXPopupView: 7e433344caeb09ed08327f370f53cf597389c2b7
+
+PODFILE CHECKSUM: f41ccf0799b26852ab57d3a4432ba7007dccb333
+
+COCOAPODS: 1.5.3
