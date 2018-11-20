@@ -12,6 +12,7 @@
 		198B31312195634500FB7433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198B312F2195634500FB7433 /* Main.storyboard */; };
 		198B31332195634500FB7433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198B31322195634500FB7433 /* Assets.xcassets */; };
 		198B31362195634500FB7433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198B31342195634500FB7433 /* LaunchScreen.storyboard */; };
+		19BA2FC921A3A78E00170A41 /* JXDirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		198B31322195634500FB7433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198B31352195634500FB7433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198B31372195634500FB7433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDirectionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		198B312A2195634500FB7433 /* JXKit */ = {
 			isa = PBXGroup;
 			children = (
+				19BA2FC721A3A78D00170A41 /* JXDirectionButton */,
 				198B312B2195634500FB7433 /* AppDelegate.swift */,
 				198B312D2195634500FB7433 /* ViewController.swift */,
 				198B312F2195634500FB7433 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				198B31372195634500FB7433 /* Info.plist */,
 			);
 			path = JXKit;
+			sourceTree = "<group>";
+		};
+		19BA2FC721A3A78D00170A41 /* JXDirectionButton */ = {
+			isa = PBXGroup;
+			children = (
+				19BA2FC821A3A78D00170A41 /* JXDirectionButton.swift */,
+			);
+			path = JXDirectionButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198B312E2195634500FB7433 /* ViewController.swift in Sources */,
+				19BA2FC921A3A78E00170A41 /* JXDirectionButton.swift in Sources */,
 				198B312C2195634500FB7433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
